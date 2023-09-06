@@ -1,15 +1,42 @@
 body {
-    
     background-color: rgb(123, 165, 106);
 }
-.grid-container{
+
+@media (max-width: 767px) {
+    .no_mobile {
+        display: none;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .flex-item {
+        font-weight: bold;
+    }
+}
+
+@media (min-width: 992px){
+    .flex-item {
+        font-size: larger;
+    }
+}
+
+.grid-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     gap: 10px;
 }
-.grid-item{
-grid-column: 1/3;
+
+.grid-item-1 {
+    grid-column: 1/3;
+}
+
+.grid-item-2 {
+    grid-column: 1/2;
+}
+
+.grid-item-3 {
+    grid-column: 2/3;
 }
 
 header {
@@ -41,7 +68,6 @@ header i:last-of-type {
 main {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-
 }
 
 aside {
@@ -55,11 +81,6 @@ aside {
     border-style: dashed;
     border-color: rgb(57, 71, 31);
 }
-@media (max-width: 767px) {
-.no_mobile{
-    display: none;
-}
-}
 
 .fishicon {
     color: rgb(255, 102, 0);
@@ -68,8 +89,6 @@ aside {
 .animals {
     list-style-type: none;
 }
-
-
 
 #linkinfo {
     font-size: 18px;
@@ -95,8 +114,6 @@ nav {
     font-size: 20px;
     font-family: Arial, Helvetica, sans-serif;
     clear: right;
-
-
 }
 
 nav ul {
@@ -109,9 +126,6 @@ nav li {
     margin-left: 15px;
     margin-right: 15px;
 }
-
-
-
 
 nav a {
     text-decoration: none;
@@ -136,20 +150,17 @@ nav a:active {
     margin-top: 50px;
     font-size: 15px;
 }
-.flex-container{
-    display:flex;
+
+.flex-container {
+    display: flex;
     flex-direction: column;
     align-items: center;
     font-family: Arial, Helvetica, sans-serif;
 }
-.flex-item{
-    flex: 1;
-    color:rgb(3, 75, 3);
-}
-@media screen and (min-width:576px) {
-    .flex-item{
 
-    }
+.flex-item {
+    flex: 1;
+    color: rgb(3, 75, 3);
 }
 
 .footer {
