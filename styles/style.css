@@ -83,6 +83,10 @@ img {
     border-radius: 5px;
 }
 
+.image {
+    margin: 0;
+}
+
 .cats {
     background-color: darkolivegreen;
     border: 10px solid rgb(56, 78, 17);
